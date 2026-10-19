@@ -2,7 +2,7 @@
 # sin notas del orador, sin comentarios del código y con un aviso para girar el teléfono.
 import re, shutil, pathlib
 W = pathlib.Path(__file__).parent
-P = pathlib.Path.home() / 'Desktop/UIPBA/Informes /Proyectos/Presentación Provincia'
+P = W.parent  # la carpeta del proyecto, «Presentación Provincia»
 h = (P / 'Presentación IIBB propuesta.html').read_text(encoding='utf-8')
 h = re.sub(r'\s*data-speaker-notes="[^"]*"', '', h)
 h = re.sub(r'<!--.*?-->\n?', '', h, flags=re.S)
