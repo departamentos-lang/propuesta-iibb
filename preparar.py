@@ -17,7 +17,7 @@ h = h.replace('</body>', '''<div id="girar"><span>↻</span>Girá el teléfono p
 </body>''', 1)
 (W / 'presentacion.html').write_text(h, encoding='utf-8')
 shutil.copy(I / 'Presentación IIBB propuesta.pdf', W / 'propuesta-iibb-uipba.pdf')
-shutil.copy(P / 'Informe Ingresos Brutos completo' / 'Informe UIPBA IIBB abril 2026 - contexto.pdf', W / 'documento-tecnico-iibb-uipba.pdf')  # el estudio sin las propuestas
+shutil.copy(P / 'Informe Ingresos Brutos completo' / 'Informe IIBB modificado.pdf', W / 'documento-tecnico-iibb-uipba.pdf')  # el diagnóstico con el anexo de propuestas
 shutil.copy(I / 'QR propuesta IIBB.png', W / 'QR propuesta IIBB.png')
 shutil.copy(W.parent / 'QR propuesta IIBB.svg', W / 'QR propuesta IIBB.svg')
 print('listo:', len(h), 'bytes')
