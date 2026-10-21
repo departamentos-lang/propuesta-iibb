@@ -3,7 +3,8 @@
 import re, shutil, pathlib
 W = pathlib.Path(__file__).parent
 P = W.parent.parent  # la carpeta del proyecto, «Presentación Provincia»
-h = (P / 'Presentación IIBB propuesta.html').read_text(encoding='utf-8')
+I = P / 'Presentacion interactiva'
+h = (I / 'Presentación IIBB propuesta.html').read_text(encoding='utf-8')
 h = re.sub(r'\s*data-speaker-notes="[^"]*"', '', h)
 h = re.sub(r'<!--.*?-->\n?', '', h, flags=re.S)
 h = re.sub(r'/\*.*?\*/', '', h, flags=re.S)
@@ -15,8 +16,8 @@ h = h.replace('</body>', '''<div id="girar"><span>↻</span>Girá el teléfono p
 @media (orientation:portrait) and (max-width:820px){#girar{display:block}}</style>
 </body>''', 1)
 (W / 'presentacion.html').write_text(h, encoding='utf-8')
-shutil.copy(P / 'Presentación IIBB propuesta.pdf', W / 'propuesta-iibb-uipba.pdf')
-shutil.copy(P.parent / 'Informe UIPBA IIBB abril 2026 - contexto.pdf', W / 'documento-tecnico-iibb-uipba.pdf')  # el estudio sin las propuestas
-shutil.copy(P / 'QR propuesta IIBB.png', W / 'QR propuesta IIBB.png')
+shutil.copy(I / 'Presentación IIBB propuesta.pdf', W / 'propuesta-iibb-uipba.pdf')
+shutil.copy(P / 'Informe Ingresos Brutos completo' / 'Informe UIPBA IIBB abril 2026 - contexto.pdf', W / 'documento-tecnico-iibb-uipba.pdf')  # el estudio sin las propuestas
+shutil.copy(I / 'QR propuesta IIBB.png', W / 'QR propuesta IIBB.png')
 shutil.copy(W.parent / 'QR propuesta IIBB.svg', W / 'QR propuesta IIBB.svg')
 print('listo:', len(h), 'bytes')
