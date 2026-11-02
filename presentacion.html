@@ -61,6 +61,26 @@ h2.tit em{font-style:normal;background:linear-gradient(90deg,var(--celeste),var(
 .seg .btn.on{background:var(--verde);color:var(--noche)}
 
 
+.ap{margin-top:26px;display:flex;flex-direction:column;gap:26px}
+.ap-g{display:flex;flex-direction:column;gap:0}
+.ap-g h4{font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--celeste);font-weight:500;display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.ap-g h4 i{width:14px;height:14px;border-radius:3px;background:var(--celeste)}
+.ap-g.cam h4 i{background:repeating-linear-gradient(135deg,var(--celeste) 0 3px,transparent 3px 6px)}
+.ap-f{display:grid;grid-template-columns:190px 120px 1fr 200px;gap:18px;align-items:center;padding:6px 26px;min-height:62px;border-top:1px solid rgba(134,208,244,.18)}
+.ap-g .ap-f:last-child{border-bottom:1px solid rgba(134,208,244,.18)}
+.ap-f.ac{background:linear-gradient(90deg,rgba(30,214,143,.16),rgba(30,214,143,.06));border-top-color:rgba(30,214,143,.35)}
+.ap-f.ac + .ap-f{border-top-color:rgba(30,214,143,.35)}
+.ap-p{font-size:22px;font-weight:700;color:#fff;line-height:1;display:flex;align-items:center;gap:12px}
+.ap-g.cam .ap-p::before{content:"";width:14px;height:14px;border-radius:3px;flex:none;background:repeating-linear-gradient(135deg,var(--celeste) 0 3px,transparent 3px 6px)}
+.ap-n{font-size:44px;color:#fff}
+.ap-g.cam .ap-n{color:var(--celeste)}
+.ap-f.ac .ap-n,.ap-f.ac .ap-q b{color:var(--verde)}
+.ap-q{font-size:20px;color:var(--txt2);line-height:1.3}
+.ap-q b{color:#fff;font-weight:500}
+.ap-q .chip{padding:5px 14px;font-size:15px;margin-left:12px;vertical-align:middle;opacity:1;transform:none}
+.ap-e{font-size:17px;color:var(--txt2);line-height:1.3;letter-spacing:.02em;text-align:right}
+
+
 #barra{position:absolute;left:0;top:0;height:4px;background:linear-gradient(90deg,var(--brillante),var(--verde));transition:width .6s var(--ease);z-index:5}
 #nav{position:absolute;right:40px;bottom:28px;display:flex;align-items:center;gap:14px;z-index:6}
 #nav button{width:46px;height:46px;border-radius:50%;border:1px solid var(--borde);background:var(--vidrio);color:#fff;font-size:20px;cursor:pointer;transition:all .2s}
@@ -708,6 +728,21 @@ td.col-on,th.col-on{background:rgba(134,208,244,.08)}
 .rg-pie p{font-size:21px;line-height:1.45;color:var(--txt2)}
 .rg-pie p b{color:#fff;font-weight:500}
 
+.pi{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:30px;flex:1;min-height:0}
+.pi-graf{padding:30px 36px 24px;display:flex;flex-direction:column}
+.pi-graf h4{font-size:17px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:var(--celeste)}
+.pi-graf svg{width:100%;flex:1;min-height:0;margin-top:10px}
+.pi-graf .pi-nota{font-size:19px;color:var(--txt3);margin-top:8px}
+.pi-b{font-family:Ubuntu,sans-serif;font-weight:700;fill:#fff;font-size:34px}
+.pi-l{font-family:Ubuntu,sans-serif;font-weight:500;fill:#86D0F4;font-size:22px}
+.pi-x{font-family:Ubuntu,sans-serif;font-weight:700;fill:#1ED68F;font-size:30px}
+.pi-r{font-family:Ubuntu,sans-serif;fill:rgba(255,255,255,.72);font-size:20px}
+.pi-der{display:flex;flex-direction:column;gap:16px;justify-content:center}
+.pi-der .card{padding:24px 30px}
+.pi-der h4{font-size:23px;color:var(--celeste);line-height:1.2}
+.pi-der p{font-size:19px;line-height:1.45;color:var(--txt2);margin-top:6px}
+.pi-der p b{color:#fff;font-weight:500}
+
 .slide[data-t="Sin costo fiscal"] .cut{margin:auto 0;padding:44px 50px 40px}
 .slide[data-t="Sin costo fiscal"] .paso{padding:32px 30px}
 .slide[data-t="Sin costo fiscal"] .paso b{font-size:25px}
@@ -1305,7 +1340,7 @@ td.col-on,th.col-on{background:rgba(134,208,244,.08)}
   <div class="pa-ceeb" aria-label="CEEB · Centro de Estudios Económicos Bonaerense"><svg class="pa-ceeb-c" viewBox="0 0 158 157" aria-hidden="true"><polygon class="c1" fill="#86D0F4" points="0,157 27,157 49,85 30,100"/><polygon class="c2" fill="#ffffff" points="44,157 71,157 103,40 78,60"/><polygon class="c3" fill="#1ED68F" points="88,157 116,157 158,0 131,24"/></svg><div><b>CEEB</b><span>CENTRO DE ESTUDIOS<br>ECONÓMICOS BONAERENSE</span></div></div>
   <p class="sep-kick rev">Sección 04</p>
   <h2 class="rev d1">Lo que no tiene <em>costo fiscal</em></h2>
-  <p class="sep-baj rev d2">Tres propuestas que no le cuestan a la Provincia: la Cuenta Única Tributaria, las ventas al Estado y los proveedores de RIGI.</p>
+  <p class="sep-baj rev d2">Cuatro propuestas que no le cuestan a la Provincia: la Cuenta Única Tributaria, las ventas al Estado, los proveedores de RIGI y la producción incremental.</p>
   <div class="sep-linea"></div>
   <div class="indice rev d3"><div class="hecho"><b>01</b>Contexto de la industria bonaerense</div><div class="hecho"><b>02</b>Ingresos Brutos: el punto de partida</div><div class="hecho"><b>03</b>La propuesta en tres pasos</div><div class="on"><b>04</b>Lo que no tiene costo fiscal</div></div>
 </section>
@@ -1354,6 +1389,63 @@ td.col-on,th.col-on{background:rgba(134,208,244,.08)}
   </div>
 </section>
 
+<section class="slide" data-t="Producción incremental">
+  <div class="eyebrow rev"><span class="n">04</span>Lo que no tiene costo fiscal · Planteo de UIPBA</div>
+  <h2 class="tit rev d1">Ingresos Brutos cero sobre <em>lo que supera al año anterior</em></h2>
+  <div class="rg">
+    <div class="card hoy rev d2"><small>Hoy</small><h3>Producir más paga más</h3>
+      <ul><li>La Provincia cobra sobre <b>todo lo facturado</b></li><li>Crecer no tiene premio: cada peso extra paga <b>la alícuota plena</b></li></ul></div>
+    <div class="card con rev d2"><small>Con la propuesta</small><h3>Lo que crece, alícuota cero</h3>
+      <ul><li>La Provincia cobra sobre <b>la base del año anterior</b>: lo mismo que hoy</li><li>El crecimiento queda exento ese año; <b>al siguiente ya es base</b> y tributa</li></ul></div>
+  </div>
+  <div class="rg-pie">
+    <div class="card rev d4"><p>Es el criterio del <b>Régimen Provincial de Inversiones Estratégicas</b> (Ley 15.510): en una ampliación exime solo los ingresos nuevos, con expediente y umbrales de inversión.</p></div>
+    <div class="card rev d5"><p>Acá, <b>sin expediente ni inversión</b>: alcanza con producir más que el año anterior. Y no resigna <b>nada de lo que hoy se recauda</b>.</p></div>
+  </div>
+</section>
+
+<section class="slide" data-t="Producción incremental: cómo funciona">
+  <div class="eyebrow rev"><span class="n">04</span>Lo que no tiene costo fiscal · Planteo de UIPBA</div>
+  <h2 class="tit rev d1">Se compara con el año anterior y <em>solo el excedente</em> queda exento</h2>
+  <div class="pi">
+    <div class="card pi-graf rev d2">
+      <h4>Un ejemplo</h4>
+      <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet" aria-label="Año anterior: 100. Este año: 120, de los cuales 100 son la base del año anterior y pagan como hoy, y 20 son el excedente con alícuota cero">
+        <line x1="40" y1="445" x2="760" y2="445" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+        <g class="rev d3">
+          <rect x="240" y="155" width="150" height="290" rx="10" fill="#06224a" stroke="rgba(134,208,244,.6)" stroke-width="2"/>
+          <text class="pi-b" x="315" y="298" text-anchor="middle">100</text>
+          <text class="pi-r" x="315" y="332" text-anchor="middle">paga como hoy</text>
+          <text class="pi-l" x="315" y="486" text-anchor="middle">Año anterior</text>
+        </g>
+        <g class="rev d4">
+          <line x1="40" y1="155" x2="700" y2="155" stroke="#86D0F4" stroke-width="3" stroke-dasharray="12 9" opacity=".85"/>
+          <text class="pi-r" x="40" y="118" text-anchor="start" fill="#86D0F4">Base del año</text>
+          <text class="pi-r" x="40" y="144" text-anchor="start" fill="#86D0F4">anterior, actualizada</text>
+          <rect x="450" y="155" width="150" height="290" rx="10" fill="#06224a" stroke="rgba(134,208,244,.6)" stroke-width="2"/>
+          <text class="pi-b" x="525" y="298" text-anchor="middle">100</text>
+          <text class="pi-r" x="525" y="332" text-anchor="middle">paga como hoy</text>
+          <text class="pi-l" x="525" y="486" text-anchor="middle">Este año</text>
+        </g>
+        <g class="rev d5">
+          <rect x="450" y="97" width="150" height="58" rx="10" fill="rgba(30,214,143,.22)" stroke="#1ED68F" stroke-width="2.5"/>
+          <text class="pi-x" x="525" y="137" text-anchor="middle">+20</text>
+          <text class="pi-r" x="616" y="117" text-anchor="start" fill="#1ED68F">Excedente:</text>
+          <text class="pi-r" x="616" y="143" text-anchor="start" fill="#1ED68F">alícuota cero</text>
+          <text class="pi-b" x="525" y="76" text-anchor="middle">120</text>
+        </g>
+      </svg>
+      <p class="pi-nota">Cifras ilustrativas. La base es facturación, actualizada por precios.</p>
+    </div>
+    <div class="pi-der">
+      <div class="card rev d3"><h4>La base</h4><p>La base imponible del año anterior, <b>actualizada por un índice de precios</b>. Lo que ya se producía sigue tributando igual.</p></div>
+      <div class="card rev d4"><h4>El excedente</h4><p>Lo que supera la base, con <b>alícuota cero</b>, se liquida en la declaración jurada anual.</p></div>
+      <div class="card rev d5"><h4>Convenio Multilateral</h4><p>Se compara la base <b>atribuida a la Provincia</b>, con el coeficiente que la empresa ya declara.</p></div>
+      <div class="card rev d6"><h4>Retenciones y percepciones</h4><p>ARBA las adecúa al beneficio, para que el alivio <b>no termine en saldo a favor</b>.</p></div>
+    </div>
+  </div>
+</section>
+
 <section class="slide" data-t="El cuadro completo" data-init="cuadro">
   <div class="eyebrow rev"><span class="n">+</span>El detalle de todas las medidas</div>
   <h2 class="tit rev d1">El cuadro completo</h2>
@@ -1363,6 +1455,28 @@ td.col-on,th.col-on{background:rgba(134,208,244,.08)}
   </table>
   <p class="aster rev d3">* Diferencia entre la suma de las medidas, estimadas cada una en forma aislada, y el total del estudio, que considera el solapamiento entre medidas. La Cuenta Única Tributaria no tiene costo fiscal: no resigna recaudación.</p>
   <p class="fuente">En % de la recaudación total de Ingresos Brutos de la PBA.</p>
+</section>
+
+<section class="slide" data-t="Medidas y proyectos">
+  <div class="eyebrow rev"><span class="n">+</span>Antecedentes · Ingresos Brutos a la industria en otras provincias</div>
+  <h2 class="tit rev d1">Medidas y proyectos</h2>
+  <p class="bajada rev d2"><b>Cinco provincias</b> ya tienen Ingresos Brutos cero o reducido para la industria. <b>Dos</b> anunciaron llevarlo a cero.</p>
+  <div class="ap">
+    <div class="ap-g rev d3">
+      <h4><i></i>Ya vigente · alícuota más baja para la industria</h4>
+      <div class="ap-f ac"><div class="ap-p">Córdoba</div><div class="ap-n num">0%</div><div class="ap-q">hasta <b>$3.200 M</b> de facturación, si invierte <span class="chip exenta">mismo umbral que la propuesta</span></div><div class="ap-e">Ley · dic 2025</div></div>
+      <div class="ap-f"><div class="ap-p">Santa Fe</div><div class="ap-n num">0%</div><div class="ap-q">para el <b>65%</b> de la industria; otro 32% a 1,05%</div><div class="ap-e">Ley · nov 2025</div></div>
+      <div class="ap-f"><div class="ap-p">Entre Ríos</div><div class="ap-n num">0%</div><div class="ap-q">hasta <b>$1.430 M</b>; 1% hasta $5.200 M</div><div class="ap-e">Decreto · feb 2026</div></div>
+      <div class="ap-f"><div class="ap-p">Chaco</div><div class="ap-n num">0%</div><div class="ap-q">de <b>0% a 1,5%</b>, según ventas</div><div class="ap-e">Ley tarifaria · abr 2025</div></div>
+      <div class="ap-f"><div class="ap-p">Mendoza</div><div class="ap-n num">0,5%</div><div class="ap-q">nueve años de baja gradual</div><div class="ap-e">Vigente · 2026</div></div>
+    </div>
+    <div class="ap-g cam rev d4">
+      <h4><i></i>En camino</h4>
+      <div class="ap-f"><div class="ap-p">Catamarca</div><div class="ap-n num">0%</div><div class="ap-q">para <b>toda la industria</b>, por ley; hoy paga 1,5%</div><div class="ap-e">Anuncio · sep 2026</div></div>
+      <div class="ap-f"><div class="ap-p">Neuquén</div><div class="ap-n num">0%</div><div class="ap-q">desde <b>2028</b>, para quien contrate proveedores y trabajadores neuquinos</div><div class="ap-e">Anuncio · oct 2026</div></div>
+    </div>
+  </div>
+  <p class="fuente">Relevamiento de prensa y sitios oficiales de cada provincia, septiembre y octubre de 2026. Alícuota más baja que le queda a la industria en cada caso.</p>
 </section>
 
 <section class="slide qrf" data-t="Descargá la propuesta">
